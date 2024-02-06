@@ -21,6 +21,7 @@ const Postagen = sequelize.define('postagens',{
 })
 // comando para criar a tabela a cima.
 // Postagen.sync({force: true})
+
 Postagen.create({
     titulo: "UM TITULO QUALQUER",
     conteudo: "dfhsfgfgsdfgfuhjtgnfhfargjghjghsfgsfg fgsdf sdhs sdfsdfhsdfh hsfhsdfhhs"
@@ -40,7 +41,7 @@ const Usuaroi = sequelize.define('usuarios', {
         type: Sequelize.STRING
     }
 })
-
+// comando para criar a tabela a cima.
 // Usuaroi.sync({force: true})
 
 Usuaroi.create({
