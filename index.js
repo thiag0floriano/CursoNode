@@ -32,8 +32,12 @@ const Sequelize = require("sequelize");
 
 //Rotas
     app.get('/cad', function(req, res){
-        res.send('ROTA DE CADASTRO DE POSTS');
+        res.render('formulario')
     });
+
+    app.post('/add', function(req, res){
+        res.send('FORMULÁRIO RECEBIDO!')
+    })
 
 app.listen(8786, function(){
     console.log("Servidor Rodando na url http://localhost:8786");
