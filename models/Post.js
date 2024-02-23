@@ -9,7 +9,7 @@ const Post = db.sequelize.define('postagens', {
     }
 })
 
-// Post.sync({force:true})
+// Post.sync({force:true}) //Usado para criar a planilha acima no banco de dados
 
 // Método para buscar todas as postagens
 Post.all = function() {
